@@ -1,0 +1,6 @@
+.vscode/**
+.git/**
+**/*.map
+**/*.ts
+**/tsconfig.json
+**/.DS_Store

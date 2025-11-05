@@ -1,0 +1,49 @@
+{
+  "name": "Drib",
+  "scopeName": "source.drib",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#builtins" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        { "name": "comment.line.double-slash.drib", "match": "//.*$" }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.drib",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            { "name": "constant.character.escape.drib", "match": "\\\\.|\\\"" }
+          ]
+        },
+        {
+          "name": "string.quoted.single.drib",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            { "name": "constant.character.escape.drib", "match": "\\\\.|\\'" }
+          ]
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        { "name": "keyword.control.drib", "match": "\\b(?:when|otherwise|loop|return)\\b" },
+        { "name": "storage.type.drib", "match": "\\b(?:fun|val)\\b" },
+        { "name": "constant.language.drib", "match": "\\b(?:true|false|nil)\\b" }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        { "name": "support.function.builtin.drib", "match": "\\b(?:add|sub|mul|div|pow|mod|gt|lt|geq|leq|eqs|not|print|println)\\b(?=\\s*\\()" }
+      ]
+    }
+  }
+}
