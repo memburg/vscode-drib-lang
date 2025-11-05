@@ -1,0 +1,4 @@
+*.json linguist-language=json
+*.json linguist-detectable=true
+*.jsonl linguist-language=json
+*.jsonl linguist-detectable=true
