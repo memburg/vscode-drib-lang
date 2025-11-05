@@ -3,19 +3,28 @@
   "displayName": "Drib Language Basics",
   "description": "Basic syntax highlighting for the Drib language.",
   "version": "0.0.1",
-  "publisher": "your-publisher-id",
+  "publisher": "drib-lang",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/memburg/vscode-drib-lang"
+  },
   "contributes": {
     "languages": [
       {
         "id": "drib",
-        "aliases": ["Drib", "drib"],
-        "extensions": [".drib"],
+        "aliases": [
+          "Drib",
+          "drib"
+        ],
+        "extensions": [
+          ".drib"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
