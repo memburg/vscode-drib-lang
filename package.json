@@ -1,7 +1,7 @@
 {
-  "name": "drib-language-basics",
-  "displayName": "Drib Language Basics",
-  "description": "Basic syntax highlighting for the Drib language.",
+  "name": "vscode-drib-language",
+  "displayName": "Drib Language",
+  "description": "Syntax highlighting for the Drib language.",
   "version": "0.0.1",
   "publisher": "drib-lang",
   "engines": {
